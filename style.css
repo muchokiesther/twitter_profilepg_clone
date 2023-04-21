@@ -1,0 +1,83 @@
+.top{
+    background-color: black;
+}
+
+
+
+
+.details{
+background-color: black;
+color: white;
+}
+
+
+.details img{
+    width:70px;
+    height: 72px;
+    transform: translate (10px 87px);
+}
+
+.profileview {
+   
+}
+
+.vieww{
+    background-color: black;
+    color: white;
+}
+
+.buttons{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20rem;
+
+}
+
+
+.buttons {
+    border-bottom: 0.5px solid white;
+  }
+
+  #viewbtn:hover {
+    border-bottom: 5px solid blue;
+  }
+    #replies:hover{
+        border-bottom: 5px solid blue;
+    }
+    #media:hover{
+        border-bottom: 5px solid blue;
+    }
+    #likes:hover{
+        border-bottom: 5px solid blue;
+    
+    }
+
+    #viewbtn{
+        background-color: black;
+        color: white;
+        padding:10px;
+        border-style: none;
+    }
+
+    #replies{
+        background-color: black;
+        color: white;
+        padding:10px;
+        border-style: none;
+    }
+ 
+    #media{
+        background-color: black;
+        color: white;
+        padding:10px;
+        border-style: none;
+    }
+
+    #likes{
+        background-color: black;
+        color: white;
+        padding:10px;
+        border-style: none;
+    }
