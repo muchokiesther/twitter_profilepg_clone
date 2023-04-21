@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     
+    
+}
+
+body{
+    justify-content: center;
 }
 
 
@@ -32,10 +37,11 @@ color: white;
 
 
 .details img{
-    width:150px;
-    height: 150px;
+    width:180px;
+    height: 160px;
 position: absolute;
 top:65%;
+margin-left: 40px;
 }
 
 .profileview {
@@ -117,7 +123,7 @@ top:65%;
     }
 
     .icons ion-icon{
-        border: 1px solid white;
+        border: 1px solid grey;
         border-radius: 50%;
         padding: 5px;
     }
@@ -126,8 +132,8 @@ top:65%;
         color: white;
         background-color: transparent;
         border-radius: 20px;
-        padding: 3px;
-        border-color: white;
+        padding: 6px;
+        border-color: grey;
         
     }
 
@@ -138,13 +144,22 @@ top:65%;
 
     }
 
+.posts{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
     .posts img{
         width:60px;
         height: 60px;
         border-radius: 50%;
         justify-content: center;
-        padding-left: 0.8%;
-
+        float: left;
+        margin-left: 0.2%;
+        
+    }
+    .text_cont{
+        margin-left: 75px;
     }
 
 .posts body{
@@ -155,13 +170,14 @@ top:65%;
     .content{
         display: flex;
         flex-direction: row;
+        gap: 20px;
         
     }
 
-    .company_dets{
+     .company_dets{
         display: flex;
         flex-direction: row;
-    }
+    } 
 
     .p_dets{
         padding-top: 5px;
@@ -174,8 +190,33 @@ top:65%;
     .followingcount{
         display: flex;
         flex-direction: row;
-        padding-top: 10px;
-        gap:20px;
+        padding-top: 15px;
+        gap:25px;
     }
     
+    span{
+        color: grey;
+    }
+.text_cont ion-icon{
+color: blue;
+}
 
+.titless{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.title_emoji{
+    padding-top: 10px;
+    color: grey;
+}
+
+.head{
+    color: grey;
+}
+
+.p_dets ion-icon{
+    color: blue;
+
+}

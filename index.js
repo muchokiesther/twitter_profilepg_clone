@@ -7,10 +7,10 @@ class Profile {
     
       let html = `
         <div class="details">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM1_a0KoW78kq15dGXxEmwcM6mXzMI2Hr5A&usqp=CAU" alt="">
           <div class="profileview">
           <div class ="p_dets">
-            <h2>${this.profile.name}</h2>
+            <h2>${this.profile.name } <ion-icon name="checkmark-circle" ></h2> 
             <h3>${this.profile.username}</h3>
             <p>${this.profile.email}</p>
             </div>
@@ -29,11 +29,19 @@ class Profile {
             <p>${this.profile.company.catchPhrase}</p>
             <p>${this.profile.company.bs}</p>
             </div>
-            <div class ="followingcount">
-            <p> <b>322</b> following</p>
-            <p> <b>110.8K</b> followers</p>
+          
+            <div class="title_emoji">
+            <div class ="titless">
+            <p><ion-icon name="bag-remove-outline"></ion-icon>Science and Technology<ion-icon name="information-circle-outline"></ion-icon></p>
+            <p><ion-icon name="location-outline"></ion-icon>Ethereum</p>
+            <p><ion-icon name="link-outline"></ion-icon>Vitto.cc</p>
             </div>
-
+            <p><ion-icon name="calendar-outline"></ion-icon>Joined August 2020</p>
+          </div>
+          <div class ="followingcount">
+          <p> <b>322</b> <span>following</span></p>
+          <p> <b>110.8K</b> <span> followers </span></p>
+          </div>
           </div>
         </div>
       `;
@@ -91,8 +99,13 @@ class Profile {
           const postItem = document.createElement('p');
           postItem.innerHTML = `
           <div class="posts">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" <h3>${post.title}</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM1_a0KoW78kq15dGXxEmwcM6mXzMI2Hr5A&usqp=CAU" alt="">
+         
+          <div class ="text_cont">
+          <h5>Leanne Graham <ion-icon name="checkmark-circle" ></ion-icon></h5>
+          <h4>${post.title}</h4>
           <p>${post.body}</p>
+          </div>
             </div>
           `;
           this.postList.appendChild(postItem);
