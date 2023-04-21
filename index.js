@@ -9,20 +9,31 @@ class Profile {
         <div class="details">
           <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
           <div class="profileview">
+          <div class ="p_dets">
             <h2>${this.profile.name}</h2>
             <h3>${this.profile.username}</h3>
             <p>${this.profile.email}</p>
-            <h2>${this.profile.address.city}</h2> <!-- fix the property name to address.city -->
+            </div>
+            <h2>${this.profile.address.city}</h2> 
+            <div class ="content">
             <p>${this.profile.address.street}</p>
             <p>${this.profile.address.suite}</p>
             <p>${this.profile.address.zipcode}</p>
-            <p>${this.profile.address.geo.lat}</p> <!-- fix the property name to address.geo.lat -->
-            <p>${this.profile.address.geo.lng}</p> <!-- fix the property name to address.geo.lng -->
-            <p>${this.profile.phone}</p>
+            <p>${this.profile.address.geo.lat}</p> 
+            <p>${this.profile.address.geo.lng}</p> 
+            <h4>${this.profile.phone}</h4>
             <p>${this.profile.website}</p>
-            <h2>${this.profile.company.name}</h2> <!-- fix the property name to company.name -->
+            </div>
+            <h2>${this.profile.company.name}</h2> 
+            <div class = "company_dets">
             <p>${this.profile.company.catchPhrase}</p>
             <p>${this.profile.company.bs}</p>
+            </div>
+            <div class ="followingcount">
+            <p> <b>322</b> following</p>
+            <p> <b>110.8K</b> followers</p>
+            </div>
+
           </div>
         </div>
       `;
@@ -77,10 +88,12 @@ class Profile {
       .then(posts => {
         this.postList.innerHTML = '';
         posts.forEach(post => {
-          const postItem = document.createElement('li');
+          const postItem = document.createElement('p');
           postItem.innerHTML = `
-            <h2>${post.title}</h2>
-            <p>${post.body}</p>
+          <div class="posts">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" <h3>${post.title}</h3>
+          <p>${post.body}</p>
+            </div>
           `;
           this.postList.appendChild(postItem);
         });
