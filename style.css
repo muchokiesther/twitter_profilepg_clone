@@ -67,6 +67,7 @@ margin-left: 40px;
 
 .buttons {
     border-bottom: 0.5px solid white;
+    padding-bottom: 15px;
   }
 
   #viewbtn:hover {
@@ -221,7 +222,7 @@ color: blue;
 
 }
 
-.vieww p{
-font-size: 15px;
+.tonote {
+font-size:20px;
 color: grey;
 }
