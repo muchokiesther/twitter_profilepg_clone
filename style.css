@@ -1,12 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: black;
     
     
 }
 
 body{
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -42,6 +47,7 @@ color: white;
 position: absolute;
 top:65%;
 margin-left: 40px;
+border-radius: 50%;
 }
 
 .profileview {
